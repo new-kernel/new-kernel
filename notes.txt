@@ -1,0 +1,5 @@
+2021/4/16:
+In arch/x86_64/src/boot/header.S, calling main() from boot/main.rs then calling goToProtectedMode: from boot/pm.S doesn't work because,
+boot/header.S is in 16 bit mode which is where protected mode should be called. When you start protected mode in boot/header.S it stops
+working because after main() or init() is called protected mode stops working probably because the kernel is compilied for 64 bit mode
+(most likely the reason why).

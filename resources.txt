@@ -1,0 +1,5 @@
+Useful websites and repositories for OS development that are used for Novusk development
+
+OSDev Wiki - https://wiki.osdev.org/Main_Page
+Writing an OS in Rust - Philipp Oppermann's blog https://os.phil-opp.com/ <--- Very helpful
+x86-bare-metal-examples - https://github.com/cirosantilli/x86-bare-metal-examples
