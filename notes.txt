@@ -6,4 +6,7 @@ working because after main() or init() is called protected mode stops working pr
 
 2021/4/16 - 2021/4/17
 iso option added to Makefile to link Novusk with Grub. Now Novusk starts in 32 bit protected mode and doesn't need to transition from 16 
-bit to 32 bit protected mode, this can be bad because it is harder to call unsafe code like, hardware drivers, 
+bit to 32 bit protected mode, this can be bad because it is harder to call unsafe code like hardware drivers. 
+
+2021/4/17 - 2021/4/18
+Copying boot from https://os.phill-opp.com/edition-1/, someday NASM will be replaced with GAS.
