@@ -1,12 +1,24 @@
 2021/4/16:
-In arch/x86_64/src/boot/header.S, calling main() from boot/main.rs then calling goToProtectedMode: from boot/pm.S doesn't work because,
-boot/header.S is in 16 bit mode which is where protected mode should be called. When you start protected mode in boot/header.S it stops
-working because after main() or init() is called protected mode stops working probably because the kernel is compilied for 64 bit mode
-(most likely the reason why).
+In arch/x86_64/src/boot/header.S, calling main() from boot/main.rs then 
+calling goToProtectedMode: from boot/pm.S doesn't work because, boot/header.S 
+is in 16 bit mode which is where protected mode should be called. When you 
+start protected mode in boot/header.S it stops working because after main() or
+ init() is called protected mode stops working probably because the kernel is 
+compilied for 64 bit mode (most likely the reason why).
 
 2021/4/16 - 2021/4/17
-iso option added to Makefile to link Novusk with Grub. Now Novusk starts in 32 bit protected mode and doesn't need to transition from 16 
-bit to 32 bit protected mode, this can be bad because it is harder to call unsafe code like hardware drivers. 
+iso option added to Makefile to link Novusk with Grub. Now Novusk starts in 32 
+bit protected mode and doesn't need to transition from 16 bit to 32 bit 
+protected mode, this can be bad because it is harder to call unsafe code like 
+hardware drivers. 
 
 2021/4/17 - 2021/4/18
-Copying boot from https://os.phill-opp.com/edition-1/, someday NASM will be replaced with GAS.
+Copying boot from https://os.phill-opp.com/edition-1/, someday NASM will be 
+replaced with GAS.
+
+2021/4/19
+For some reason when you print formatted text or an &str a certian number of 
+times or in a certian spot, for some reason the kernel reboots after boot.
+The only way of printing text a lot without this happening is printing 
+everything in bytes. There needs to be a way of formatting text in bytes or a
+better way of printing.
