@@ -10,3 +10,11 @@ Most of what is used in Novusk should be written in Rust because it is fast and 
 ``notes.txt`` - for explaniations for why something is or insn't done
 
 ``resources.txt`` - for links that can help with OS development
+
+---
+
+Supported bootloaders:
+
+x86_64 Novusk:
+
+[bootloader](https://github.com/rust-osdev/bootloader)

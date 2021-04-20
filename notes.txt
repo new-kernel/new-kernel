@@ -22,3 +22,10 @@ times or in a certian spot, for some reason the kernel reboots after boot.
 The only way of printing text a lot without this happening is printing 
 everything in bytes. There needs to be a way of formatting text in bytes or a
 better way of printing.
+
+2021/4/20
+The problem with x86_64 VGA text mode is probably because of the bootloader
+and the really old code for the text driver. The bootloader Philipp Oppermann
+uses only runs one Rust binary and can't be linked with anything else, to fix
+this problem most of Novusk will be a library that has a start function that
+can be included with a binary for an OS.
