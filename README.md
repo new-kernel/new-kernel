@@ -19,6 +19,6 @@ x86_64 Novusk v1.2:
 
 [bootloader](https://github.com/rust-osdev/bootloader)
 
-Aarch64, i686, x86_64 Novusk v2:
+Aarch64, i686, x86_64 Novusk v2 - Novusk v2.1.3:
 
 [Novus Boot](https://github.com/new-kernel/novus-boot)
