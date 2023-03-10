@@ -1,6 +1,0 @@
-Useful websites and repositories for learning OS development for Novusk
-
-OSDev Wiki - https://wiki.osdev.org/Main_Page <--- This is a very good resource for OS development, it talks about OS development on different architectures and in different languages
-Writing an OS in Rust - Philipp Oppermann's blog https://os.phil-opp.com/ <--- Very helpful for understanding how Rust can be used in OS development, talks about x86_64 OS development in Rust
-Blog - Löwenware - https://lowenware.com/categories/osdev/ <--- This talks about bare metal programming on Aarch64 devices with Rust
-Stephen Marz: Blog - https://osblog.stephenmarz.com/ <--- Tutorial for RISCV OS development in Rust
